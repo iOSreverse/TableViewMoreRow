@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  TableViewMoreRow
+//
+//  Created by wdw on 2020/5/23.
+//  Copyright © 2020 wdw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//屏幕宽度
+#define SCREEN_WIDTH  ([[UIScreen mainScreen] bounds].size.width)
+//屏幕高度
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+//间隔
+#define listMargin    15
+//一行显示几列
+#define rowcellCount  2
+
+#define itemX listMargin
+#define itemY listMargin
+#define itemW  ((SCREEN_WIDTH - listMargin * (rowcellCount + 1)) / rowcellCount)
+#define itemH  (itemW * 4.0 / 3.0)
+
+#endif /* PrefixHeader_pch */
